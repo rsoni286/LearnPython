@@ -29,3 +29,22 @@ input_string = input("Enter the string :")
 check_string = input("Enter the word to be replaced :")
 replacing_string = input("Enter the word which replaces the old word :")
 print("The new capitalized string is : ", input_string.replace(check_string, replacing_string).upper())
+
+
+#program to arrange data in list into different list according to their data type
+list = ["a",12,1.89, 66,"rahul", 4.22, "rojan", "himalaya", 44,1.87]
+list_int=[]
+list_float=[]
+list_string=[]
+for x in list:
+    if isinstance(x, int):
+        list_int.append(x)
+    elif isinstance(x,str):
+        list_string.append(x)
+    else:
+        list_float.append(x)
+
+print("The list with int :", list_int)
+print("The list with float :", list_float)
+print("The list with string :", list_string)
+
