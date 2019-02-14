@@ -64,6 +64,7 @@ name = input("Enter your name : ")
 age = input("Enter your age : ")
 mob_num = input("Enter mobile number : ")
 
+
 while True:
     if name =="":
         name = input("Name cannot be empty, enter your name again : ")
