@@ -12,7 +12,10 @@ while True:
         i = input("Can only be digits, enter number of matches again :")
     else:
         i = int(i)
-        break
+        if i <1:
+            i =input("Cannot be less than 1, enter number of matches again :")
+        else:
+            break
 
 user_score = 0
 comp_score = 0
@@ -69,6 +72,8 @@ while a <= i:
 
 if user_score > comp_score:
     print(colored(" Congratulations you won!","green",attrs=["reverse"]))
+elif user_score == comp_score:
+    print(colored(" Its a tie!", "yellow", attrs=["reverse"]))
 else:
-    print(colored("\n\n Sorry, you lose", "red", attrs=["reverse"]))
+    print(colored(" Sorry, you lose", "red", attrs=["reverse"]))
 
