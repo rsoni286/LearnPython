@@ -76,4 +76,8 @@ elif user_score == comp_score:
     print(colored(" Its a tie!", "yellow", attrs=["reverse"]))
 else:
     print(colored(" Sorry, you lose", "red", attrs=["reverse"]))
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ad4ec5e73deb416e67df0ed8f96cfa7481d8b93
 
