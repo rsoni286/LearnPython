@@ -17,8 +17,11 @@ def add(s):
 
 
 def evaluate():
-    s = eval(a.get())
-    a.set(s)
+    try:
+        s = eval(a.get())
+        a.set(s)
+    except SyntaxError:
+        a.set("Syntax Error")
 
 
 def clear():
