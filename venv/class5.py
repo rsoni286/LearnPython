@@ -13,7 +13,10 @@ a = StringVar()
 
 def add(s):
     b = a.get()
-    a.set(b+s)
+    if b=="Syntax Error":
+        a.set(s)
+    else:
+        a.set(b+s)
 
 
 def evaluate():
